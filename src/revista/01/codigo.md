@@ -1,6 +1,14 @@
-# PROPUESTA DE CODIGO DE ETICA DEL CIUDADANO
+### Revista Probidad
 
+Edición No. 1  
 Marzo 1999
+
+[Índice](index.md) | [PDF](revista_probidad_01_199903.pdf) | [Ediciones](../index.md)
+
+----
+
+
+# PROPUESTA DE CODIGO DE ETICA DEL CIUDADANO
 
 La Revista Probidad además de promover y contribuir a la transparencia y la
 respondabilidad en la gestión pública y a una nueva cultura política

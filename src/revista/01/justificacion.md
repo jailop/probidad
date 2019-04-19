@@ -1,6 +1,14 @@
-# Justificación para una ONG anticorrupción salvadoreña
+### Revista Probidad
 
-Marzo, 1999
+Edición No. 1  
+Marzo 1999
+
+[Índice](index.md) | [PDF](revista_probidad_01_199903.pdf) | [Ediciones](../index.md)
+
+----
+
+
+# Justificación para una ONG anticorrupción salvadoreña
 
 **La corrupción obstaculiza la democracia,
 agrava los problemas económicos, sociales y políticos,

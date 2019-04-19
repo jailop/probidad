@@ -3,40 +3,44 @@
 import os
 from shutil import copyfile
 from markdown import markdown
+from jinja2 import Template
 
 SOURCE = './src'
 TARGET = './output'
 
-
-def mkd(filename):
-    with open(filename, 'r') as fd:
-        text = fd.read()
-        text = text.replace('.md', '.html')
-        m = markdown(text)
-    outname = filename.replace(SOURCE, TARGET)
-    outname = outname.replace('.md', '.html')
-    with open(outname, 'w') as fd:
-        fd.write(m)
-
-def walker(directory):
-    for filename in os.listdir(directory):
-        longname = directory + '/' + filename
-        outname = longname.replace(SOURCE, TARGET)
-        if os.path.isfile(longname):
-            if os.path.exists(outname):
-                srctime = os.path.getmtime(longname)
-                trgtime = os.path.getmtime(outname)
-                if trgtime > srctime:
-                    continue
-            if longname[-3:] == '.md':
-                mkd(longname)
+class Generator:
+    def __init__(self):
+        with open('templates/basic.html', 'r') as fd:
+            self.template = Template(fd.read())
+    def mkd(self, filename):
+        with open(filename, 'r') as fd:
+            text = fd.read()
+            text = text.replace('.md', '.html')
+            m = markdown(text)
+            html = self.template.render(content=m)
+        outname = filename.replace(SOURCE, TARGET)
+        outname = outname.replace('.md', '.html')
+        with open(outname, 'w') as fd:
+            fd.write(html)
+    def walker(self, directory):
+        for filename in os.listdir(directory):
+            longname = directory + '/' + filename
+            outname = longname.replace(SOURCE, TARGET)
+            if os.path.isfile(longname):
+                if os.path.exists(outname):
+                    srctime = os.path.getmtime(longname)
+                    trgtime = os.path.getmtime(outname)
+                    if trgtime > srctime:
+                        continue
+                if longname[-3:] == '.md':
+                    self.mkd(longname)
+                else:
+                    copyfile(longname, outname)
+                print(longname)
             else:
-                copyfile(longname, outname)
-            print(longname)
-        else:
-            if not os.path.exists(outname):
-                os.makedirs(outname)
-            walker(longname)
+                if not os.path.exists(outname):
+                    os.makedirs(outname)
+                self.walker(longname)
 
 if __name__ == '__main__':
-    walker(SOURCE)
+    Generator().walker(SOURCE)

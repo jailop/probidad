@@ -1,6 +1,13 @@
-# Bienvenidos
+### Revista Probidad
 
+Edición No. 1  
 Marzo 1999
+
+[Índice](index.md) | [PDF](revista_probidad_01_199903.pdf) | [Ediciones](../index.md)
+
+----
+
+# Bienvenidos
 
 La Revista Probidad es un esfuerzo por promover la transparencia en la gestión
 pública y formar una nueva cultura política, participativa, democrática y moral.

@@ -1,6 +1,13 @@
-# Breve Curriculum de Probidad
+### Revista Probidad
 
-Marzo, 1999
+Edición No. 1  
+Marzo 1999
+
+[Índice](index.md) | [PDF](revista_probidad_01_199903.pdf) | [Ediciones](../index.md)
+
+----
+
+# Breve Curriculum de Probidad
 
 ## 1994 a noviembre/1996
 

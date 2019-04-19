@@ -1,9 +1,18 @@
-# Temas recomendados
+### Revista Probidad
 
+Edición No. 1  
 Marzo 1999
+
+[Índice](index.md) | [PDF](revista_probidad_01_199903.pdf) | [Ediciones](../index.md)
+
+----
+
+
+# Temas recomendados
 
 A continuación una lista de temas recomendados por los lectores de la Revista
 Probidad:
+
 - Causas, manifestaciones e impacto de la corrupción
     - La construcción social de la corrupción
 - Retos y riesgos de las nuevas iniciativas anticorrupción

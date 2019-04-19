@@ -1,8 +1,11 @@
 # Revista Probidad
 
-Primera Edición  
+Edición No. 1  
 Marzo 1999
 
+[PDF](revista_probidad_01_199903.pdf) | [Ediciones](../index.md)
+
+----
 ## Contenido
 
 Un breve resumen sobre la experiencia profesional y académica de los
