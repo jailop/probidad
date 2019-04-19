@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import os
+import re
 from shutil import copyfile
 from markdown import markdown
 from jinja2 import Template
@@ -12,9 +13,23 @@ class Generator:
     def __init__(self):
         with open('templates/basic.html', 'r') as fd:
             self.template = Template(fd.read())
+    def preprocess(self, filename, text):
+        while True:
+            begin = text.find('%include')
+            if begin < 0:
+                break
+            end = text.find('\n', begin)
+            sentence = text[begin:end]
+            file_to_include = sentence.split(':')[1].strip()
+            file_to_include = filename[0:filename.rfind('/') + 1] + file_to_include
+            with open(file_to_include, 'r') as fd:
+                include = fd.read()
+            text = text.replace(sentence, include)
+        return text
     def mkd(self, filename):
         with open(filename, 'r') as fd:
             text = fd.read()
+            text = self.preprocess(filename, text)
             text = text.replace('.md', '.html')
             m = markdown(text)
             html = self.template.render(content=m)

@@ -1,12 +1,4 @@
-### Revista Probidad
-
-Edición No. 1  
-Marzo 1999
-
-[Índice](index.md) | [PDF](revista_probidad_01_199903.pdf) | [Ediciones](../index.md)
-
-----
-
+%incude: header.inc
 
 # PROPUESTA DE CODIGO DE ETICA DEL CIUDADANO
 
@@ -25,7 +17,7 @@ siguientes:
 - Estado que afectan la vida de cada salvadoreño y el futuro del país.
 - Promover y apoyar esfuerzos para reformar el sector público, de manera tal,
   que provea mejor servicio al público y muestre un mejor y justo manejo de los
-fondos públicos.
+  fondos públicos.
 - Trabajar de una forma transparente.
 - Garantizar que el trabajo no sea partidario: asegurar que sea inclusivo y no
   permitir que sea asociado con/ni apropiado por un partido ó político.
