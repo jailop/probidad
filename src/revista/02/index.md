@@ -1,7 +1,7 @@
 # Revista Probidad
 
 Edición No. 2  
-Mayo 1999
+Mayo-Junio 1999
 
 [PDF](revista_probidad_02_199905.pdf) | [Ediciones](../index.md)
 

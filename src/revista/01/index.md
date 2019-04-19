@@ -1,7 +1,7 @@
 # Revista Probidad
 
 Edición No. 1  
-Marzo 1999
+Marzo-Abril 1999
 
 [PDF](revista_probidad_01_199903.pdf) | [Ediciones](../index.md)
 

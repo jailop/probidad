@@ -41,11 +41,13 @@ class Generator:
         for filename in os.listdir(directory):
             longname = directory + '/' + filename
             outname = longname.replace(SOURCE, TARGET)
+            if outname[-3:] == '.md':
+                outname = outname.replace('.md', '.html')
             if os.path.isfile(longname):
                 if os.path.exists(outname):
-                    srctime = os.path.getmtime(longname)
                     trgtime = os.path.getmtime(outname)
-                    if trgtime > srctime:
+                    srctime = os.path.getmtime(longname)
+                    if trgtime >= srctime:
                         continue
                 if longname[-3:] == '.md':
                     self.mkd(longname)
